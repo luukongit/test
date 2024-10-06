@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steh-Café Back Stein Haus</title>
+    <style>
+        /* Gesamtstil für eine moderne und warme Optik */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* Sanfter hellgrauer Hintergrund */
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a; /* Dunkles Grau für Text, um ihn weich und angenehm zu machen */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #8c6446; /* Warmer, weicher Braunton */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.2em; /* Größer für Desktop */
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #e2d1c3; /* Weicher Beige-Ton für Navigation */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten für mehr Tiefe */
+        }
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            margin: 0 20px;
+            font-size: 1.4em;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
+            padding-bottom: 5px;
+        }
+        nav a:hover {
+            color: #8c6446;
+            border-bottom: 2px solid #8c6446;
+        }
+
+        /* Anpassungen für den gesamten Inhalt */
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Sanfter Schatten für eine angenehme, moderne Optik */
+        }
+
+        /* Anpassung für große Bildschirme (Computer) */
+        @media (min-width: 1024px) {
+            section {
+                max-width: 1200px; /* Breitere Abschnitte für Computer */
+            }
+            body {
+                font-size: 18px; /* Größere Schrift auf Computern */
+            }
+            nav a {
+                font-size: 1.6em; /* Größere Schrift in der Navigation */
+            }
+        }
+
+        /* Anpassung für mittlere und kleinere Bildschirme (Tablets und Handys) */
+        @media (max-width: 1023px) {
+            section {
+                max-width: 90%; /* Auf Tablets und Handys den Textbereich schmaler halten */
+            }
+            body {
+                font-size: 16px; /* Kleinere Schrift für Mobilgeräte */
+            }
+            nav a {
+                font-size: 1.2em; /* Kleinere Schrift in der Navigation für Mobilgeräte */
+            }
+        }
+
+        /* Anpassung für sehr kleine Bildschirme (Handys) */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.8em; /* Kleinere Header-Schrift auf Handys */
+            }
+            section {
+                padding: 15px; /* Weniger Padding auf Handys für mehr Platz */
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a4a4a; /* Dunkles Grau für den Footer */
+            color: white;
+            font-size: 0.9em;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #8c6446;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #75523a;
+        }
+        h2 {
+            color: #8c6446; /* Gleiche Farbe wie der Header für Konsistenz */
+            margin-bottom: 20px;
+        }
+        p, blockquote {
+            color: #4a4a4a;
+        }
+        blockquote {
+            border-left: 4px solid #8c6446;
+            padding-left: 15px;
+            font-style: italic;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Willkommen bei Steh-Café Back Stein Haus
+    </header>
+
+    <nav>
+        <a href="#geschichte">Unsere Geschichte</a>
+        <a href="#oeffnungszeiten">Öffnungszeiten</a>
+        <a href="#galerie">Bildergalerie</a>
+        <a href="#rezensionen">Rezensionen</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- Section: Unsere Geschichte -->
+    <section id="geschichte">
+        <h2>Unsere Geschichte</h2>
+        <p>
+            Die Geschichte von „Steh-Café Back Stein Haus“ beginnt im Herzen von Hannover. Seit über 30 Jahren bereiten wir unsere Backwaren mit traditionellen Methoden und hochwertigen Zutaten zu. Unser Familienbetrieb ist bekannt für seine handwerkliche Qualität und den unvergleichlichen Geschmack.
+        </p>
+    </section>
+
+    <!-- Section: Öffnungszeiten -->
+    <section id="oeffnungszeiten">
+        <h2>Öffnungszeiten</h2>
+        <p>
+            <strong>Montag - Freitag:</strong> 6:30 - 18:00 Uhr <br>
+            <strong>Samstag:</strong> 7:00 - 14:00 Uhr <br>
+            <strong>Sonntag:</strong> 8:00 - 12:00 Uhr
+        </p>
+        <p>
+            <strong>Adresse:</strong> Bertha-von-Suttner-Platz 8, 30173 Hannover <br>
+            <a href="https://www.google.com/maps/place/Bertha-von-Suttner-Platz+8,+30173+Hannover" target="_blank" class="btn">Auf Google Maps ansehen</a>
+        </p>
+    </section>
+
+    <!-- Section: Bildergalerie -->
+    <section id="galerie">
+        <h2>Bildergalerie</h2>
+        <div class="gallery">
+            <h3>Ostergebäck</h3>
+            <img src="file-7JhAREcdOlPg5C1GGZuBLrAu" alt="Ostergebäck">
+            <h3>Frisches Brot</h3>
+            <img src="file-CD9JTv1Etlh8A2s6AlERsNTw" alt="Frisches Brot">
+            <h3>Frisches Baguette</h3>
+            <img src="file-2CUaZiTqQsZdnF3hnJWn1nWc" alt="Frisches Baguette">
+            <h3>Verschiedene Brötchen</h3>
+            <img src="file-b2U1HqwTiylVB8Qg7cAprxAP" alt="Brötchen">
+            <h3>Herzförmiges Gebäck</h3>
+            <img src="file-0S8Mo3NyuJoCC50FZG0rvyTg" alt="Herzen">
+            <h3>Leckere Kuchen</h3>
+            <img src="file-Lm5hji6SPNHhIv2EagGNZQwO" alt="Kuchen">
+        </div>
+    </section>
+
+    <!-- Section: Rezensionen -->
+    <section id="rezensionen">
+        <h2>Rezensionen</h2>
+        <!-- ElfSight Widget eingebunden -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f007798f-d216-4f5c-83f5-dcc76bc5161f" data-elfsight-app-lazy></div>
+    </section>
+
+    <!-- Section: Kontakt -->
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>
+            <strong>Telefon:</strong> +49 (0) 511 1234567 <br>
+            <strong>E-Mail:</strong> info@backsteinhaus.de
+        </p>
+        <a href="mailto:info@backsteinhaus.de" class="btn">E-Mail senden</a>
+    </section>
+
+    <footer>
+        &copy; 2024 Steh-Café Back Stein Haus. Alle Rechte vorbehalten.
+    </footer>
+
+</body>
+</html>
